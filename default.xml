@@ -710,7 +710,8 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
-
+  <!-- FIRST: Add/Replace repos and particular directories needed by PBRP -->
+  <include name="pbrp-default.xml"/>
   <!-- OmniROM -->
   <include name="omni-default.xml" />
 </manifest>
