@@ -122,7 +122,6 @@ This software uses the following open source project(s):
 
 * [TWRP](https://github.com/minimal-manifest-twrp)
 
-* [PBRP] ANDROID 9.0 BUILDER 
 
 ## Support
 
