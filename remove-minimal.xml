@@ -2,6 +2,12 @@
 <manifest>
 
     <!-- Remove from default.xml -->
+    <remove-project name="device/generic/common"/>
+    <remove-project name="device/generic/goldfish"/>
+    <remove-project name="device/generic/goldfish-opengl"/>
+
+    <remove-project name="kernel/configs"/>
+
     <remove-project name="platform/compatibility/cdd"/>
     <remove-project name="platform/cts"/>
 
@@ -249,6 +255,7 @@
     <remove-project name="platform/packages/apps/Provision"/>
     <remove-project name="platform/packages/apps/QuickSearchBox"/>
     <remove-project name="platform/packages/apps/SafetyRegulatoryInfo"/>
+    <remove-project name="platform/packages/apps/SecureElement"/>
     <remove-project name="platform/packages/apps/SoundRecorder"/>
     <remove-project name="platform/packages/apps/SpareParts"/>
     <remove-project name="platform/packages/apps/StorageManager"/>
@@ -281,6 +288,7 @@
     <remove-project name="platform/packages/apps/Car/Dialer"/>
     <remove-project name="platform/packages/apps/Car/Hvac"/>
     <remove-project name="platform/packages/apps/Car/LatinIME"/>
+    <remove-project name="platform/packages/apps/Car/Launcher"/>
     <remove-project name="platform/packages/apps/Car/LensPicker"/>
     <remove-project name="platform/packages/apps/Car/LocalMediaPlayer"/>
     <remove-project name="platform/packages/apps/Car/Media"/>
@@ -331,7 +339,6 @@
     <remove-project name="platform/system/connectivity/wificond"/>
     <remove-project name="platform/system/connectivity/wifilogd"/>
     <remove-project name="platform/system/chre"/>
-    <remove-project name="platform/system/libufdt"/>
     <remove-project name="platform/system/nvram"/>
     <remove-project name="platform/system/tpm"/>
 
@@ -392,6 +399,7 @@
     <remove-project name="android_packages_apps_CellBroadcastReceiver"/>
     <remove-project name="android_packages_apps_Contacts"/>
     <remove-project name="android_packages_apps_Dialer"/>
+    <remove-project name="android_packages_apps_DocumentsUI"/>
     <remove-project name="android_packages_apps_EmergencyInfo"/>
     <remove-project name="android_packages_apps_Launcher3"/>
     <remove-project name="android_packages_apps_Gallery2"/>
@@ -399,10 +407,10 @@
     <remove-project name="android_packages_apps_MusicFX"/>
     <remove-project name="android_packages_apps_Nfc"/>
     <remove-project name="android_packages_apps_OmniBrain"/>
-    <remove-project name="android_packages_apps_OmniChromium"/>
     <remove-project name="android_packages_apps_OmniLib"/>
     <remove-project name="android_packages_apps_PhoneCommon"/>
     <remove-project name="android_packages_apps_Settings"/>
+    <remove-project name="android_packages_apps_SettingsIntelligence"/>
     <remove-project name="android_packages_apps_Stk"/>
     <remove-project name="android_packages_inputmethods_LatinIME"/>
     <remove-project name="android_packages_providers_DownloadProvider"/>
@@ -424,7 +432,6 @@
     <!-- Remove from omni-default.xml (OmniROM Projects) -->
     <remove-project name="android_packages_apps_Matlog"/>
     <remove-project name="android_packages_apps_MonthCalendarWidget"/>
-    <remove-project name="android_packages_apps_OmniRecord"/>
     <remove-project name="android_packages_apps_OmniChange"/>
     <remove-project name="android_packages_apps_OmniClock"/>
     <remove-project name="android_packages_apps_OmniGears"/>
@@ -432,6 +439,8 @@
     <remove-project name="android_packages_apps_OmniStyle"/>
     <remove-project name="android_packages_apps_OmniSwitch"/>
     <remove-project name="android_packages_apps_OpenDelta"/>
+    <remove-project name="android_packages_apps_OmniChromium"/>
+    <remove-project name="android_packages_apps_OmniRecord"/>
     <remove-project name="android_packages_apps_Phonograph"/>
     <remove-project name="android_vendor_interfaces"/>
 

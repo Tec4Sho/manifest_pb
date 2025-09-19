@@ -57,10 +57,10 @@
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/f2fs-tools" />
+  <remove-project name="platform/external/libcups" />
+  <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/libnfnetlink" />
   <remove-project name="platform/external/libnetfilter_conntrack" />
-  <remove-project name="platform/external/nos/host/android" />
-  <remove-project name="platform/external/nos/host/generic" />
   <remove-project name="platform/external/nos/test/system-test-harness" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/tinycompress" />
@@ -101,6 +101,7 @@
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="platform/hardware/qcom/bt" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />

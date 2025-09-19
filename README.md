@@ -1,140 +1,74 @@
+## Submitting Patches ##
+------------------
+Our project is open source, and patches are always welcome!
+You can send patches by using:
 
-<h1 align="center">
-  <br>
-  <a href="https://pitchblackrecovery.com"><img src="https://raw.githubusercontent.com/shovon668/xda-template/r3/pbrp3-banner-xda.png" alt="Welcome to PitchBlack Recovery Project 👋" width="600"></a>
-  <br>
- Welcome to PitchBlack Recovery Project 👋
-  <br>
-</h1>
+Pull request, right here on git.
 
-<h4 align="center">The Perfect Android Recovery for your device! PBRP provides the most advanced Open Source Android Recovery to troubleshoot your device on the GO!</h4>
+Contact us at https://rebrand.ly/teamwin-recovery-zulip-community
 
+## Maintaining Authorship ##
+----------------------
+Maintaining authorship is a very important aspect of working with Open Source code. If you wish to submit a patch/fix
+from anywhere else (another ROM, project, etc.), it is imperative that you maintain the ownership of the person whose
+work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and the [principles of open source](http://opensource.org/docs/osd)
+are upheld. Your contribution to the project will still be recognized as you will forever be listed as the committer.
 
-<p align="center">
-<a>
-  <img alt="Version" src="https://img.shields.io/badge/version-3.1.0-blue.svg?cacheSeconds=2592000" />
-  </a>
-
-<a>
-  <img alt="Status" src="https://img.shields.io/badge/status-stable-deepgreen.svg" />
-  </a>
-
-  <a href="https://t.me/pbrpcom" target="_blank">
-    <img alt="chat" src="https://img.shields.io/badge/chat-on--telegram-lightblue.svg" />
-  </a>
-
-  <a href="https://pitchblackrecovery.com/docs" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  
-  <a href="https://www.patreon.com/pitchblackrecovery">
-    <img src="https://img.shields.io/badge/$-donate-orange.svg?maxAge=2592000&amp;style=flat">
-  </a>
-
-  <a href="https://saythanks.io/to/pitchblackrecovery%40gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/android-9.0/LICENSE" target="_blank">
-    <img alt="License: Apache--2.0" src="https://img.shields.io/badge/License-Apache--2.0-yellow.svg" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-build">How To build</a> •
-  <a href="#become-official-maintainer">Become Official Maintainer</a> •
-  <a href="#download">Download</a> •
-  <a href="#follow-us">Follow Us</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#support">Support</a> •
-  <a href="#license">License</a>
-</p>
-
-<h3 align="center">
-  🏠 <a href="https://pitchblackrecovery.com/">Homepage</a> •
-  📥 <a href="https://pitchblackrecovery.com/devices">Official Devices</a>
-</h3>
-
-## Key Features
-
-* Fresh native android like UI
-  - New file manager
-  - New Icons
-  - New Accent
-  - New Background
-  - New Action Screens
-* Universal package flasher (zip, ozip, img etc)
-* MIUI OTA Support
-* Encryption Support
-* PBRP in house tweaks:
-  - AVB 2.0 disabler
-  - Treble checker disabler
-  - Easy logger
-* Popular public tools:
-  - Magisk Installer & Remover
-  - Magisk Recovery
-  - SuperSU Installer & Remover
-  - System Apps Remover
-  - Password Recovery etc
-
-## How To Build
-
+If you manually cherry pick a patch/fix then you will need to add the original author prior to pushing to our [gerrit](https://gerrit.omnirom.org).
+This is a very easy task to perform, and is usually done after you commit a patch/fix locally. This is accomplished
+after you type in `git commit -a` , type in the commit message and save. You would then do the following:
 
 ```bash
-# Initialize the latest stable branch
-$ repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-9.0
-
-# Sync the latest stable branch
-$ repo sync
+git commit --amend --author "Author <email@address.com>"
 ```
 
-Follow our omni_device.mk sample
-
-📱 <a href="omni_device.mk.sample.md" target = "_blank">omni_device.mk sample</a>
-
-⚙️ Build
+So it should look like this once you get all of the author's information:
 
 ```bash
-$ cd <source-dir>
-$ . build/envsetup.sh
-$ lunch omni_<device>-eng
-$ mka recoveryimage
-````
+git commit --amend --author "Spencer McGillicuddy <spencer.the.bestest@gmail.com>"
+```
 
-## Become Official Maintainer
+Alternatively, adding as part of the original `git commit` message is preferred and done like the following:
 
-To become official maintainer for a device make sure you have build a fully working PBRP build for the device. After that apply for official maintainer ship [here](https://pitchblackrecovery.com/docs/device-maintainership-form/). Feel free to contact us at [telegram](https://t.me/pbrpcom).
+```bash
+git commit --author="Author <email@address.com>" -m "[commit message]"
+```
 
-## Download
-
-You can [download](https://pitchblackrecovery.com/devices) the latest version of PBRP official build for your device from our [website](https://pitchblackrecovery.com/devices).
-
-## Follow Us
-
-* Website: https://pitchblackrecovery.com
-* GitHub: [@PitchBlackRecoveryProject](https://github.com/PitchBlackRecoveryProject)
-* Telegram: [@PitchBlackRecovery](https://t.me/pitchblackrecovery)
+This saves time, and when part of your normal routine, prevents the infamous "ermahgerd I forgot to add authorship -
+let me fix it because I was found out!" message.
 
 
-## Credits
+## Getting Started ##
+---------------
 
-This software uses the following open source project(s):
+To get started with OMNI sources to build TWRP, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
-* [TWRP](https://github.com/minimal-manifest-twrp)
+To initialize your local repository using the OMNIROM trees to build TWRP, use a command like this:
 
+    repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 
-## Support
+To initialize a shallow clone, which will save even more space, use a command like this:
 
-Give a ⭐️ if this project helped you!
+    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 
-<a href="https://www.patreon.com/pitchblackrecovery">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+Then to sync up:
 
-## License
+    repo sync
+    
+## Python Requirement Note ##
+-----------------------
 
-Copyright © 2020 [PitchBlack Recovery Project](https://github.com/PitchBlackRecoveryProject).<br />
-This project is [Apache 2.0](https://github.com/PitchBlackRecoveryProject/android_bootable_recovery/blob/android-9.0/LICENSE) licensed.
+Before building, make sure you have your system's python implementation set to python2. 
+This project was created before python2 was deprecated and will not build with python3.
 
-***
-> [PitchBlack Recovery Project Team](https://pitchblackrecovery.com/#team)
+## Build ##
+-----
+
+Then to build for a device with recovery partition:
+
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
+
+Then to build for a device without recovery partition:
+
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka bootimage
